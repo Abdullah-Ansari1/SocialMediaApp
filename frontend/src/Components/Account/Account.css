@@ -1,0 +1,156 @@
+.account {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    height: 92vh;
+  }
+  
+  .accountleft {
+    background-image: linear-gradient(to right, #fff5bc, #cec1ff);
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vmax;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  .accountright {
+    padding: 2vmax;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .accountright img:hover {
+    transform: scale(1.1);
+  }
+  
+  .accountright img {
+    transition: all 0.5s;
+  }
+  
+  .accountright > h5 {
+    margin: 2vmax;
+  }
+  
+  .accountright > a {
+    color: rgb(73, 73, 73);
+    text-decoration: none;
+    font: 100 1.2rem "Roboto";
+    text-align: center;
+    margin-top: 2vmax;
+    padding: 0.5vmax 1vmax;
+    transition: all 0.5s;
+  }
+  
+  .accountright > a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.253);
+  }
+  .accountright > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vmax;
+  }
+  
+  .accountright > div > button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.253);
+  }
+  .accountright > div > button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+    padding: 0.5vmax 1vmax;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .account {
+      grid-template-columns: 2fr 1fr;
+    }
+  
+    .accountleft {
+      padding: 0;
+      min-height: 90vh;
+    }
+  
+    .accountright > a {
+      font: 100 1rem "Roboto";
+      margin-top: 6vw;
+    }
+  }
+
+  .confirmbox{
+    margin: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.texttype{
+  margin: 0px !important;
+  padding: 0px !important;
+  font-size: larger !important;
+
+}
+.btn{
+  margin-top: 40px;
+}
+
+.btnCancel{
+  font-size: large !important;
+  margin: 20px !important;
+}
+
+.btnCancel:hover{
+  background-color: #a0a0a0 !important;
+  color: whitesmoke;
+}
+
+.btnYes{
+  font-size: large !important;
+  margin: 20px !important;
+}
+.btnYes:hover{
+  background-color: #f55f5f !important;
+  color: whitesmoke;
+}
+
+
+@media screen and (max-width: 600px){
+  .confirmbox{
+   margin: 0%;
+   padding: 30px;
+  }
+
+.texttype{
+  font-size: 14px !important;
+
+}
+.btn{
+  margin-top: 20px;
+}
+
+.btnCancel{
+font-size: 14px !important;
+  margin: 20px !important;
+}
+
+.btnCancel:hover{
+  background-color: #a0a0a0 !important;
+  color: whitesmoke;
+}
+
+.btnYes{
+  font-size: 14px !important;
+  margin: 20px !important;
+}
+.btnYes:hover{
+  background-color: #f55f5f !important;
+  color: whitesmoke;
+}
+}
