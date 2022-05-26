@@ -16,3 +16,6 @@
 /frontend/.env.production.local
 
 
+temp_auto_push.bat
+temp_interactive_push.bat
+branch_structure.json
